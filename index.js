@@ -2,7 +2,7 @@ const http = require('http');
 const TelegramBot = require('node-telegram-bot-api');
 
 // Your bot token
-const token = '7685007895:AAHvVqzZMyykZ5C5LM9iuRWgKaqNdvJtrSo';
+const token = process.env.BOT_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 
 const clockEmojis = [
